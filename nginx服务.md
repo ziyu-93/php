@@ -21,6 +21,7 @@ server{
 ```
 vi /private/etc/hosts
 
+127.0.0.1  想编辑的地址
 ```
 >如果没有权限修改，右键显示简介修改权限。（读与写）
 ## 默认打开地址 /usr/local/var/www
