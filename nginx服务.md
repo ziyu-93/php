@@ -1,4 +1,4 @@
-# Mac Nginx
+# Mac ox Nginx
 
 ## 安装完成Nginx
 >打开nginx
@@ -9,7 +9,7 @@ sudo nginx
 
 ## 修改配置项 nginx.conf
 ```
-vi /usr/local/etc/nginx/nginx.conf
+vim /usr/local/etc/nginx/nginx.conf
 
 server{
     listen --;
@@ -30,6 +30,14 @@ vi /private/etc/hosts
 cd /usr/local/var/www
 
 ```
+
+## nginx 支持 php
+
+1、先将 /usr/local/etc/nginx/nginx.conf 中支持php 的那段代码取消注释。
+
+2、然后确定配置内容的正确性(如配置的port与 /usr/local/etc/php/7.0/php-fpm.d/www.conf 文件中的listen是否一致，默认的文件夹是否相同);
+
+3、修改完成后，重新启动nginx 然后访问php文件。
 
 ## 编辑文件（显示隐藏文件）
 ```
